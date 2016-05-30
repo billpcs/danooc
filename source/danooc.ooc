@@ -26,9 +26,9 @@ rightPad: func(s: String, reach: Int) -> String {
 }
 
 printMessage: func(msg: String) {
-	Terminal setFgColor(Color green)
-	"\n#{msg}\n" println()
-	Terminal reset()
+  Terminal setFgColor(Color green)
+  "\n#{msg}\n" println()
+  Terminal reset()
 }
 
 printOverall: func(f2s: HashMap<String, Int>, overall_size: Int) {
@@ -42,7 +42,7 @@ printOverall: func(f2s: HashMap<String, Int>, overall_size: Int) {
 printVisualizationBar: func(items: Int) {
   "{ " print()
   for (t in 0..items) {
-      "#" print()
+    "#" print()
   }
   " }" print()
   println()
@@ -67,19 +67,19 @@ recurseDirectory: func(path: File, hash: HashMap <String, Int>) -> HashMap<Strin
     if (f dir?()) recurseDirectory(f, hash)
     else hash put(f getPath(), f getSize() / 1024)
   )
-	return hash
+  return hash
 }
 
-filesToSizeMap: func(args: String[]) -> HashMap <String, Int> {  	
-	hash := HashMap <String, Int> new()
+filesToSizeMap: func(args: String[]) -> HashMap <String, Int> {   
+  hash := HashMap <String, Int> new()
   if (args length > 1 && File new(args[1]) dir?()) {
-		printMessage("> A valid path was given as argument.")
-		return recurseDirectory(File new(args[1]), hash)
-	}
-	else {
-		printMessage("> Running for the current directory.")
-		return recurseDirectory(File new(File getCwd()), hash)	
-	}
+    printMessage("> A valid path was given as argument.")
+    return recurseDirectory(File new(args[1]), hash)
+  }
+  else {
+    printMessage("> Running for the current directory.")
+    return recurseDirectory(File new(File getCwd()), hash)  
+  }
 }
 
 swap : func <T> (arr: ArrayList<T>, a: Int, b: Int) {
@@ -120,7 +120,7 @@ main: func (args: String[]) -> Int {
   }
 
   // Get the overall size by adding the HashMap values
-	overall_size := addHashMapValues(f2s)
+  overall_size := addHashMapValues(f2s)
 
   // A HashMap to keep the different extensions
   extensions := HashMap <String, Int> new()
