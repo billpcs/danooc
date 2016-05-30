@@ -63,11 +63,11 @@ Sometimes, if you don't have permission to certain files/directories the program
 
 You can also, of course, combine it with pipes to find certain extensions
 
-`$ danooc | grep "^ooc "
+`$ danooc | grep "^ooc "`
 
 to find info on only ooc files or
 
-`$ danooc | grep "Size"
+`$ danooc | grep "Size"`
 
 to see the estimated size of the current directory
 
