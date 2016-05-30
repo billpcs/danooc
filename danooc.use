@@ -1,0 +1,5 @@
+Name: danooc
+Description: A simple and fast directory analyzer
+Version: 0.1
+SourcePath: source
+Main: danooc
