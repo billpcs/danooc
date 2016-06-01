@@ -49,21 +49,21 @@ Here is a quick demo:
 You can call the program with no arguments, so it executes for the current directory
 
 <p align="center">
-	<img src="http://i.imgur.com/pRAgmjZ.png">
+	<img src="http://i.imgur.com/0fDYV5F.png">
 </p>
 
 
 Or you can call it for a certain path in your system
 
 <p align="center">
-	<img src="http://i.imgur.com/R8xTwbe.png">
+	<img src="http://i.imgur.com/CeVzOi9.png">
 </p>
 
 Sometimes, if you don't have permission to certain files/directories the program will fail to read the required data. You can use sudo if you want :D
 
 You can also, of course, combine it with pipes to find certain extensions
 
-`$ danooc | grep "^ooc "`
+`$ danooc | grep ".ooc "`
 
 to find info on only ooc files or
 
