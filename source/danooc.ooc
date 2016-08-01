@@ -73,7 +73,7 @@ recurseDirectory: func(path: File, hash: HashMap <String, Int>) -> HashMap<Strin
 filesToSizeMap: func(args: String[]) -> HashMap <String, Int> {   
   hash := HashMap <String, Int> new()
   if (args length > 1 && File new(args[1]) dir?()) {
-    printMessage("> A valid path was given as argument.")
+    printMessage("> Running for: " + args[1])
     return recurseDirectory(File new(args[1]), hash)
   }
   else {
