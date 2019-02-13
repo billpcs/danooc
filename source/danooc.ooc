@@ -192,5 +192,5 @@ main: func (args: String[]) -> Int {
 
   printOverall(f2s, overall_size)
 
-  return 1
+  return 0
 }
